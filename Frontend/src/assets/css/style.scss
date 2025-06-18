@@ -2,11 +2,14 @@
 $primary-color: #fe538d;
 $secondary-color: #ffb703;
 $text-color: #000;
+$text-white: #FFFFFF;
+$dark-background: #222725;
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+
 body{
-    font-family: "Poppins", sans-serif;
+    font-family: "Rubik", sans-serif;
 }
 
 
@@ -24,6 +27,41 @@ h3{
 
 p{
     font-size: 1.2em;
+}
+
+ul{
+    margin-left: 0;
+    padding-left: 0;
+    li{
+        list-style: none;
+        margin-left: 0;
+    }
+}
+
+.btn-primary{
+    background-color: $primary-color;
+    border: 1px solid $primary-color;
+    padding: 15px 20px;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    &:hover{
+        background-color: $secondary-color;
+        border: 1px solid $secondary-color;
+    }
+}
+
+.btn-secondary{
+    background-color: $secondary-color;
+    border: 1px solid $secondary-color;
+    padding: 15px 20px;
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    &:hover{
+        background-color: $primary-color;
+        border: 1px solid $primary-color;
+    }
 }
 
 header{
@@ -48,8 +86,51 @@ header{
     }
 }
 
+footer{
+    background-color: $dark-background;
+    color: $text-white;
+    h3{
+        color: $secondary-color;
+        font-size: 1.5em;
+    }
+
+    ul{
+        li{
+            padding: 5px 0;
+        }
+    }
+
+    a{
+        color: $text-white;
+        font-size: 1.2em;
+        text-decoration: none;
+    }
+}
+
 .section-1{
     .hero{
-        
+       background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0)), url('../images/hero.jpg');
+       height: 800px;
+
+       color: $text-white;
+       span{
+        color: $secondary-color;
+        font-size: 1.5em;
+        font-weight: 500;
+       }
+    }
+}
+
+.section-2{
+    img{
+        border-radius: 40px;
+    }
+
+    span{
+        color: $primary-color;
+        font-size: 1.2em;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        font-weight: 500;
     }
 }
