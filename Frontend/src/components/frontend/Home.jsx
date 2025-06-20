@@ -58,7 +58,7 @@ const Home = () => {
                         <h2>Our construction services</h2>
                         <p>We offer a diverse array of construction services, spanning residential, commercial, and industrial projects.</p>
                     </div>
-                    <div className='row'>
+                    <div className='row pt-4'>
                         <div className='col-md-3 col-lg-3'>
                             <div className='item'>
                                 <div className='service-image'>
